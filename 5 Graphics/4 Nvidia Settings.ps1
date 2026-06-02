@@ -32,6 +32,18 @@ cmd /c "reg add `"HKEY_CURRENT_USER\Software\7-Zip\Options`" /v `"CascadedMenu`"
 Move-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip\7-Zip File Manager.lnk" -Destination "$env:ProgramData\Microsoft\Windows\Start Menu\Programs" -Force -ErrorAction SilentlyContinue | Out-Null
 Remove-Item "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip" -Recurse -Force -ErrorAction SilentlyContinue | Out-Null
 
+Write-Host "Installing: Nvidia Control Panel"
+
+# install nvidia control panel
+try {
+Start-Process "winget" -ArgumentList "install `"9NF8H0H7WMLT`" --silent --accept-package-agreements --accept-source-agreements --disable-interactivity --no-upgrade" -Wait -WindowStyle Hidden
+} catch { }
+
+# uninstall winget
+Get-AppxPackage -allusers *Microsoft.Winget.Source* | Remove-AppxPackage -ErrorAction SilentlyContinue
+
+Clear-Host
+
        Write-Host "1. NVIDIA Settings: On (Recommended)"
        Write-Host "2. NVIDIA Settings: Default`n"
        while ($true) {
