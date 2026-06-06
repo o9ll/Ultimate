@@ -21,7 +21,7 @@
 Write-Host "Downloading: Hw Info..."
 
 # download hwinfo
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/hwinfo.exe" -OutFile "$env:SystemRoot\Temp\hwinfo.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/hwinfo.exe" -OutFile "$env:SystemRoot\Temp\hwinfo.exe"
 
 # start hwinfo
 Start-Process "$env:SystemRoot\Temp\hwinfo.exe"

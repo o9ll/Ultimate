@@ -129,7 +129,7 @@ $stop | ForEach-Object { Stop-Process -Name $_ -Force -ErrorAction SilentlyConti
 Get-Process | Where-Object { $_.ProcessName -like "*edge*" } | Stop-Process -Force -ErrorAction SilentlyContinue
 
 # download edge installer
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/edge.exe" -OutFile "$env:SystemRoot\Temp\edge.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/edge.exe" -OutFile "$env:SystemRoot\Temp\edge.exe"
 
 # start edge installer
 Start-Process -Wait "$env:SystemRoot\Temp\edge.exe"
@@ -140,7 +140,7 @@ $stop | ForEach-Object { Stop-Process -Name $_ -Force -ErrorAction SilentlyConti
 Get-Process | Where-Object { $_.ProcessName -like "*edge*" } | Stop-Process -Force -ErrorAction SilentlyContinue
 
 # download edge webview installer
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/edgewebview.exe" -OutFile "$env:SystemRoot\Temp\edgewebview.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/edgewebview.exe" -OutFile "$env:SystemRoot\Temp\edgewebview.exe"
 
 # start edge webview installer
 Start-Process -Wait "$env:SystemRoot\Temp\edgewebview.exe"

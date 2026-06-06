@@ -10,7 +10,7 @@
 # IWR
 - Paste this code into an elevated Administrator PowerShell/Terminal window
 ```
-iwr https://github.com/FR33THYFR33THY/Ultimate/raw/refs/heads/main/IWR.ps1 -useb | iex
+iwr https://github.com/o9ll/Ultimate/raw/refs/heads/main/IWR.ps1 -useb | iex
 ```
 
 # Guide
@@ -145,7 +145,7 @@ SHA256: D4653E70C8901B4BCACF9430E6EB69BFCD95B9924E454396991806B1C433877E
 Copyright: (c) ToastyX
 
 Name: tm5.zip
-Source: https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/tm5.zip
+Source: https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/tm5.zip
 SHA256: B4B85298901CE1E95EAB582C6084FE29C43EE24A7206CD22F9281C0DD1F35719
 Name: TM5.exe
 Source: https://www.overclock.net/threads/memory-testing-with-testmem5-tm5-with-custom-configs.1751608

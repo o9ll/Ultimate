@@ -21,7 +21,7 @@
 Write-Host "Installing: hidusbf..."
 
 # download hidusbf
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/hidusbf.zip" -OutFile "$env:SystemRoot\Temp\hidusbf.zip"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/hidusbf.zip" -OutFile "$env:SystemRoot\Temp\hidusbf.zip"
 
 # extract file
 Expand-Archive -Path "$env:SystemRoot\Temp\hidusbf.zip" -DestinationPath "$env:SystemDrive\Program Files (x86)\hidusbf" -Force

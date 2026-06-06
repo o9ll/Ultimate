@@ -21,7 +21,7 @@
 Write-Host "Downloading: TM5..."
 
 # download tm5
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/tm5.zip" -OutFile "$env:SystemRoot\Temp\tm5.zip"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/tm5.zip" -OutFile "$env:SystemRoot\Temp\tm5.zip"
 
 # extract files
 Expand-Archive "$env:SystemRoot\Temp\tm5.zip" -DestinationPath "$env:SystemRoot\Temp\tm5" -ErrorAction SilentlyContinue

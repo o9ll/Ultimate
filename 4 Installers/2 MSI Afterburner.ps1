@@ -24,7 +24,7 @@ Write-Host "GPU 'Power' & 'Power Percent' logging disabled"
 Write-Host "Causes FPS and 1% low issues`n"
 
 # download msi afterburner
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/msiafterburner.exe" -OutFile "$env:SystemRoot\Temp\msiafterburner.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/msiafterburner.exe" -OutFile "$env:SystemRoot\Temp\msiafterburner.exe"
 
 # install msi afterburner
 Start-Process -wait "$env:SystemRoot\Temp\msiafterburner.exe" -ArgumentList "/S"

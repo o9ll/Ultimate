@@ -29,7 +29,7 @@ Pause
 New-Item -Path "$env:SystemDrive\Program Files (x86)\More Clock Tool" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
 
 # download more clock tool
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/moreclocktool.exe" -OutFile "$env:SystemDrive\Program Files (x86)\More Clock Tool\More Clock Tool.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/moreclocktool.exe" -OutFile "$env:SystemDrive\Program Files (x86)\More Clock Tool\More Clock Tool.exe"
 
 # create desktop shortcut
 $WshShell = New-Object -comObject WScript.Shell

@@ -19,7 +19,7 @@
         $progresspreference = 'silentlycontinue'
 
         # DOWNLOAD INSPECTOR
-        IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/inspector.exe" -OutFile "$env:SystemRoot\Temp\inspector.exe"
+        IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/inspector.exe" -OutFile "$env:SystemRoot\Temp\inspector.exe"
 
         Write-Host "SOME GAMES NEED TO BE SET IN THEIR INDIVIDUAL PROFILE`n"
         Write-Host "NVIDIA RESIZABLE BAR FORCE:`n"

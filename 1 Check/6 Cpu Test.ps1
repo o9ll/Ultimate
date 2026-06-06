@@ -24,7 +24,7 @@
 Write-Host "Downloading: Prime95..."
 
 # download prime95
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/prime95.zip" -OutFile "$env:SystemRoot\Temp\prime95.zip"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/prime95.zip" -OutFile "$env:SystemRoot\Temp\prime95.zip"
 
 # extract files
 Expand-Archive "$env:SystemRoot\Temp\prime95.zip" -DestinationPath "$env:SystemRoot\Temp\prime95" -ErrorAction SilentlyContinue

@@ -92,7 +92,7 @@ Start-Sleep -Seconds 2
 Stop-Process -Name "msedge" -Force -ErrorAction SilentlyContinue
 
 # download edge installer
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/edge.exe" -OutFile "$env:SystemRoot\Temp\edge.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/edge.exe" -OutFile "$env:SystemRoot\Temp\edge.exe"
 
 # start edge installer
 Start-Process "$env:SystemRoot\Temp\edge.exe"

